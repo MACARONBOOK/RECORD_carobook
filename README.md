@@ -23,20 +23,22 @@ Things you may want to cover:
 
 * ...
 # RECORD_carobook<br>
-  adding function → like-it, follow(ed), serach(daily & all-pages), <br>
+  adding function → like-it, follow(ed), serach(daily & all-pages), chart.js<br>
   changes → turbolinks(partial-off), 
  
  
- -- graph --
+ ## graph 
  
 * add chart.js & change turbolinks which can be disable(partial)<br>
   $yarn add chart.js
+  
 * + write on application.js(v3 is import specific module)<br>
   import jQuery from "jquery" ← rewrite<br>
   import Chart from 'chart.js/auto';<br>
   global.$=jQuery;<br>
   global.Chart=Chart;<br>
   window.$=jQuery ← cannot search this on any sites(just simmilar ok)
+  
 * write turbolinks-can-be-disable on graph view<br>
 　ex) → users/show, one of graph<br>
   $(document).on('turbolinks:load', function() {<br>
@@ -89,7 +91,7 @@ Things you may want to cover:
     @last_week_book = @books.created_last_week
     
   <br>
-  -- table --
+## table 
   
   * add new-action on usersCon<br>
     content like this ↓<br>
